@@ -1,0 +1,28 @@
+<svg id="Counting" xmlns="http://www.w3.org/2000/svg" width="36" height="324" viewBox="0 0 36 324">
+  <g id="Group_17" data-name="Group 17">
+    <g id="Ellipse_2" data-name="Ellipse 2" fill="none" stroke="#fff" stroke-width="5">
+      <circle cx="18" cy="18" r="18" stroke="none"/>
+      <circle cx="18" cy="18" r="15.5" fill="none"/>
+    </g>
+    <circle id="Ellipse_5" data-name="Ellipse 5" cx="10" cy="10" r="10" transform="translate(8 8)" fill="#fff"/>
+    <text id="I" transform="translate(16 23)" fill="#0f75bc" font-size="16" font-family="ProximaNova-Bold, Proxima Nova" font-weight="700"><tspan x="0" y="0">I</tspan></text>
+  </g>
+  <g id="Group_18" data-name="Group 18" transform="translate(0 144)">
+    <g id="Ellipse_3" data-name="Ellipse 3" fill="none" stroke="#fff" stroke-width="5">
+      <circle cx="18" cy="18" r="18" stroke="none"/>
+      <circle cx="18" cy="18" r="15.5" fill="none"/>
+    </g>
+    <circle id="Ellipse_6" data-name="Ellipse 6" cx="10" cy="10" r="10" transform="translate(8 8)" fill="#fff"/>
+    <text id="II" transform="translate(14 23)" fill="#0f75bc" font-size="16" font-family="ProximaNova-Bold, Proxima Nova" font-weight="700" letter-spacing="-0.072em"><tspan x="0" y="0">II</tspan></text>
+  </g>
+  <g id="Group_19" data-name="Group 19" transform="translate(0 288)">
+    <g id="Ellipse_4" data-name="Ellipse 4" fill="none" stroke="#fff" stroke-width="5">
+      <circle cx="18" cy="18" r="18" stroke="none"/>
+      <circle cx="18" cy="18" r="15.5" fill="none"/>
+    </g>
+    <circle id="Ellipse_7" data-name="Ellipse 7" cx="10" cy="10" r="10" transform="translate(8 8)" fill="#fff"/>
+    <text id="III" transform="translate(13 23)" fill="#0f75bc" font-size="16" font-family="ProximaNova-Bold, Proxima Nova" font-weight="700" letter-spacing="-0.1em"><tspan x="0" y="0">III</tspan></text>
+  </g>
+  <rect id="Rectangle_122" data-name="Rectangle 122" width="6" height="112" transform="translate(15 34)" fill="#fff"/>
+  <rect id="Rectangle_123" data-name="Rectangle 123" width="6" height="112" transform="translate(15 178)" fill="#fff"/>
+</svg>
