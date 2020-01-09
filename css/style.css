@@ -6609,12 +6609,12 @@ a.text-dark:hover, a.text-dark:focus {
   box-sizing: inherit; }
 
 html {
-  font-size: 58%; }
+  font-size: 50%; }
 
 body {
   box-sizing: border-box;
-  background-color: #2ecc71;
   color: white;
+  font-size: 1.6rem;
   width: 100%; }
 
 .hero-heading {
@@ -6637,6 +6637,23 @@ body {
   font-weight: 600;
   text-transform: uppercase;
   line-height: 1.2; }
+
+.lead--gray {
+  color: #5e6872; }
+
+.lead--blue {
+  color: #0f75bc; }
+
+.text-gray-regular {
+  font-size: 1.6rem;
+  font-weight: 400;
+  color: #5e6872; }
+
+.section-space-vertical {
+  padding: 4rem 0; }
+
+.u-section-heading-margin-bottom {
+  margin-bottom: 4rem; }
 
 .btn {
   font-size: 2.4rem;
@@ -6717,6 +6734,41 @@ body {
 .navbar-logo {
   width: 50px; }
 
+#caseStudies {
+  background-color: #f3f3f3; }
+
+.caseStudyCard {
+  box-shadow: 0 3px 6px rgba(0, 0, 0, 0.16);
+  background-color: #fff; }
+  .caseStudyCard__body {
+    padding: 1rem;
+    color: #5e6872; }
+  .caseStudyCard__header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between; }
+  .caseStudyCard__citation {
+    font-size: 1.6rem;
+    font-weight: 400; }
+  .caseStudyCard__description {
+    font-size: 1.6rem;
+    font-weight: 400;
+    color: #2e2e2e; }
+
+#clients {
+  background-color: #f3f3f3; }
+
+.clientsCard {
+  background-color: #fff;
+  box-shadow: 0 3px 6px rgba(0, 0, 0, 0.16);
+  padding: 1rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center; }
+
+#consultation {
+  background-color: #0f75bc; }
+
 #ourCustomers {
   background-color: #f3f3f3; }
 
@@ -6774,3 +6826,11 @@ body {
   text-align: left;
   color: #5e6872;
   font-size: 1.6rem; }
+
+#footer {
+  background-color: #5e6872; }
+
+.footer__body {
+  display: flex;
+  flex-direction: column;
+  align-items: center; }
