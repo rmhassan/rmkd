@@ -6739,7 +6739,8 @@ body {
 
 .caseStudyCard {
   box-shadow: 0 3px 6px rgba(0, 0, 0, 0.16);
-  background-color: #fff; }
+  background-color: #fff;
+  height: 100%; }
   .caseStudyCard__body {
     padding: 1rem;
     color: #5e6872; }
@@ -6765,6 +6766,8 @@ body {
   display: flex;
   flex-direction: column;
   align-items: center; }
+  .clientsCard__img {
+    width: 10rem; }
 
 #consultation {
   background-color: #0f75bc; }
@@ -6784,6 +6787,9 @@ body {
   display: flex;
   justify-content: center;
   align-items: center; }
+
+.customers__customer {
+  width: 20rem; }
 
 #header {
   background-image: linear-gradient(to right bottom, rgba(15, 117, 188, 0.801), rgba(15, 117, 188, 0.801)), url("../img/hero-small.svg");
@@ -6820,7 +6826,7 @@ body {
   background-color: #0f75bc; }
 
 .card__body {
-  padding: 1rem; }
+  padding: 2rem; }
 
 .card__text {
   text-align: left;
