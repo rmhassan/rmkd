@@ -6621,6 +6621,7 @@ body {
   box-sizing: border-box;
   color: white;
   font-size: 1.6rem;
+  line-height: 1.2;
   width: 100%; }
 
 .hero-heading {
@@ -6655,6 +6656,11 @@ body {
   font-weight: 400;
   color: #5e6872; }
 
+.text-gray-regular--black {
+  font-size: 1.6rem;
+  font-weight: 400;
+  color: #2e2e2e; }
+
 .text-gray-regular--eighteen {
   font-size: 1.8rem; }
 
@@ -6664,10 +6670,14 @@ body {
 .u-section-heading-margin-bottom {
   margin-bottom: 4rem; }
 
+.u-right-bleed {
+  margin-right: calc(-100vw / 2 + 960px / 2); }
+
 .btn {
   font-size: 2.4rem;
   font-weight: 600;
-  color: white; }
+  color: white;
+  text-transform: uppercase; }
 
 .btn-primary {
   display: inline-block;
@@ -6680,6 +6690,32 @@ body {
 .btn-primary:hover {
   color: white;
   text-decoration: none; }
+
+.btn-primary--blue {
+  display: inline-block;
+  padding: 1rem 2rem;
+  border: 4px solid #0f75bc;
+  color: #0f75bc; }
+  .btn-primary--blue:hover {
+    color: #0f75bc;
+    text-decoration: none; }
+
+.formMain__name, .formMain__email, .formMain__description {
+  box-shadow: 0 3px 6px rgba(0, 0, 0, 0.16);
+  border: none;
+  padding: 2rem 1rem; }
+
+.getInTouch {
+  height: 100%;
+  background-color: #fff;
+  box-shadow: 0 3px 6px rgba(0, 0, 0, 0.16);
+  padding: 4rem; }
+  .getInTouch__address, .getInTouch__phone, .getInTouch__email {
+    color: #5e6872;
+    margin-bottom: 2rem; }
+  .getInTouch i {
+    color: #0f75bc;
+    margin-right: 1rem; }
 
 #howItWorks {
   background-image: url("../img/howItWorks-bg.png");
@@ -6750,6 +6786,8 @@ body {
   box-shadow: 0 3px 6px rgba(0, 0, 0, 0.16);
   background-color: #fff;
   height: 100%; }
+  .caseStudyCard__downloadImg {
+    height: 40%; }
   .caseStudyCard__body {
     padding: 1.5rem;
     color: #5e6872; }
@@ -6819,6 +6857,12 @@ body {
   letter-spacing: 0.5px;
   line-height: 1.2; }
 
+#help {
+  background-color: #f3f3f3; }
+
+#reachus {
+  background-color: #f3f3f3; }
+
 #features {
   background-color: #f3f3f3; }
 
@@ -6857,3 +6901,22 @@ body {
   display: flex;
   flex-direction: column;
   align-items: center; }
+
+.footer__social {
+  display: flex;
+  align-items: center;
+  margin-bottom: 1rem; }
+  .footer__social i {
+    margin-left: 1rem; }
+
+#services {
+  background-color: #f3f3f3; }
+
+.servicesCard {
+  background-color: #fff;
+  box-shadow: 0 3px 6px rgba(0, 0, 0, 0.16);
+  padding: 1.5rem;
+  border-radius: 5px;
+  height: 100%; }
+  .servicesCard__icon {
+    margin-bottom: 1rem; }
