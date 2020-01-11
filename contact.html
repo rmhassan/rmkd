@@ -12,7 +12,7 @@
   <body>
     <!-- Header  -->
 
-    <header class="" id="header">
+    <header class="header" id="header">
       <div class="container">
         <div class="row">
           <div class="col">
@@ -48,7 +48,9 @@
                     <a class="nav-link" href="./about.html">ABOUT US</a>
                   </li>
                   <li class="nav-item">
-                    <a class="nav-link" href="./contact.html">CONTACT US</a>
+                    <a class="nav-link active" href="./contact.html"
+                      >CONTACT US</a
+                    >
                   </li>
                 </ul>
               </div>
@@ -73,7 +75,7 @@
     <section class="section-space-vertical" id="reachus">
       <div class="container">
         <div class="row">
-          <div class="col-12 col-md-6">
+          <div class="col-12 col-md-6 mb-4">
             <div class="getInTouch">
               <div class="getInTouch__body">
                 <h2 class="heading  u-section-heading-margin-bottom ">
@@ -127,6 +129,16 @@
                   id="exampleInputEmail1"
                   aria-describedby="emailHelp"
                 />
+              </div>
+              <div class="form-group mb-md-5">
+                <label for="purpose" class="lead lead--gray mb-md-4"
+                  >Purpose</label
+                >
+                <select id="purpose" class=" form-control formMain__dropdown">
+                  <option value="" selected>Quote</option>
+                  <option value="other">Other</option>
+                  <option value="info">Info</option>
+                </select>
               </div>
               <div class="form-group mb-md-5">
                 <label for="description" class="lead lead--gray mb-md-4"

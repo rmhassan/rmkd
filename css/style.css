@@ -6624,6 +6624,10 @@ body {
   line-height: 1.2;
   width: 100%; }
 
+@media (min-width: 768px) {
+  .videoExample {
+    height: 650px; } }
+
 .hero-heading {
   font-size: 3.6rem;
   font-weight: 600;
@@ -6679,6 +6683,24 @@ body {
 .u-right-bleed {
   margin-right: calc(-100vw / 2 + 960px / 2); }
 
+@media (min-width: 576px) {
+  .abs-right {
+    position: absolute;
+    right: 0;
+    top: 24px;
+    bottom: 0;
+    z-index: 1; }
+  .abs-left {
+    position: absolute;
+    left: 0;
+    top: 0;
+    bottom: 0;
+    z-index: 1; }
+  .of {
+    width: 100%;
+    object-fit: cover;
+    height: 442px; } }
+
 .btn {
   font-size: 2.4rem;
   font-weight: 600;
@@ -6706,10 +6728,15 @@ body {
     color: #0f75bc;
     text-decoration: none; }
 
-.formMain__name, .formMain__email, .formMain__description {
+.formMain__name, .formMain__email, .formMain__dropdown, .formMain__description {
   box-shadow: 0 3px 6px rgba(0, 0, 0, 0.16);
   border: none;
-  padding: 2rem 1rem; }
+  padding: 2rem 1rem;
+  color: black;
+  font-size: 1.6rem; }
+
+.formMain__dropdown {
+  cursor: pointer; }
 
 .getInTouch {
   height: 100%;
@@ -6734,15 +6761,21 @@ body {
 
 .fancy__line::before {
   content: "";
-  width: 72%;
+  width: 70%;
   position: absolute;
   left: 0;
-  top: 40%;
+  top: 35%;
   border-bottom: 5px solid #0f75bc; }
+  @media (min-width: 576px) {
+    .fancy__line::before {
+      top: 40%;
+      width: 72%; } }
 
 #howItWorks {
-  background-image: url("../img/howItWorks-bg.png");
-  background-position: center; }
+  position: relative;
+  background-image: url("../img/howWorksDummy.png");
+  background-position: 100% 100%;
+  background-size: cover; }
 
 .listComponent {
   list-style: none; }
@@ -6758,40 +6791,67 @@ body {
     color: #0f75bc;
     font-size: 2.4rem;
     font-weight: 600; }
+  .listComponent--blue__item {
+    background-color: #0f75bc; }
+  .listComponent--blue__text {
+    border-left: 7px solid #fff;
+    color: #fff; }
   .listComponent__item::after {
     /* bullets */
-    content: url("http://upload.wikimedia.org/wikipedia/commons/thumb/3/30/RedDisc.svg/20px-RedDisc.svg.png");
+    content: url("../img/asset-1.png");
     position: absolute;
-    left: -19px;
+    left: -40px;
     /*adjust manually*/
     top: 0; }
+  .listComponent__item:nth-child(2)::after {
+    content: url("../img/asset-2.png"); }
+  .listComponent__item:last-child::after {
+    content: url("../img/asset-3.png"); }
+  .listComponent--blue__item::after {
+    content: url("../img/icons/1-blue.png"); }
+  .listComponent--blue__item:nth-child(2)::after {
+    content: url("../img/icons/2-blue.png"); }
+  .listComponent--blue__item:last-child::after {
+    content: url("../img/icons/3-blue.png"); }
+  .listComponent--blue__item::before {
+    border-left: 5px solid #0f75bc; }
   .listComponent__item::before {
     /* lines */
     content: "";
     position: absolute;
-    left: -10px;
+    left: -25px;
     /* adjust manually */
-    border-left: 3px solid white;
-    height: 110%;
+    border-left: 5px solid white;
+    height: 100%;
     width: 5px; }
   .listComponent__item:first-child::before {
-    top: 15px; }
+    top: 35px; }
   .listComponent__item:last-child::before {
     height: 6px; }
+  @media (min-width: 992px) {
+    .listComponent__item::after {
+      /* bullets */
+      left: -60px;
+      /*adjust manually*/ }
+    .listComponent__item::before {
+      /* lines */
+      left: -45px;
+      /* adjust manually */ } }
 
 .navbar {
   padding: 1rem 0; }
 
 .navbar-dark .navbar-nav .nav-link {
-  margin-right: 1rem;
   padding: 0.5rem 1.5rem;
   font-size: 1.8rem;
   text-transform: uppercase;
-  color: white; }
-
-.navbar-nav .nav-item .nav-link {
+  color: white;
   border: 4px solid transparent;
   transition: border 0.5s ease-in-out 0.5s; }
+
+.navbar-nav .nav-item {
+  margin-right: 1rem;
+  text-align: center; }
 
 .navbar-nav .nav-item .nav-link:hover {
   border: 4px solid white; }
@@ -6801,6 +6861,66 @@ body {
 
 .navbar-logo {
   width: 50px; }
+  @media (min-width: 768px) {
+    .navbar-logo {
+      width: auto; } }
+
+.navbar-dark .nav-item .nav-link.active {
+  border: 4px solid white; }
+
+.testimonialCard {
+  box-shadow: 0 3px 6px rgba(0, 0, 0, 0.16);
+  height: 99%; }
+  .testimonialCard__header {
+    display: flex;
+    align-items: center;
+    padding: 1.5rem;
+    height: 30%; }
+  .testimonialCard__body {
+    padding: 1.5rem; }
+  .testimonialCard__text {
+    color: #5e6872; }
+
+.testimonialCard--1__header {
+  background-color: #199b90; }
+
+.testimonialCard--2__header {
+  background-color: #0f75bc; }
+
+.carousel-control-prev,
+.carousel-control-next {
+  opacity: 1;
+  cursor: pointer; }
+
+.carousel-control-prev {
+  margin-left: -22px; }
+
+.carousel-control-next {
+  margin-right: -22px; }
+
+@media (min-width: 576px) {
+  .carousel-control-prev {
+    margin-left: -40px; }
+  .carousel-control-next {
+    margin-right: -40px; } }
+
+@media (min-width: 992px) {
+  .carousel-control-prev {
+    margin-left: -90px; }
+  .carousel-control-next {
+    margin-right: -90px; } }
+
+@media (min-width: 1200px) {
+  .carousel-control-prev {
+    margin-left: -120px; }
+  .carousel-control-next {
+    margin-right: -120px; } }
+
+.carousel-control-prev-icon {
+  background-image: url("../img/icons/arrow-left.png"); }
+
+.carousel-control-next-icon {
+  background-image: url("../img/icons/arrow-right.png"); }
 
 #caseStudies {
   background-color: #f3f3f3; }
