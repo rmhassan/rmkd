@@ -6666,6 +6666,12 @@ body {
 
 .section-space-vertical {
   padding: 4rem 0; }
+  @media (min-width: 768px) {
+    .section-space-vertical {
+      padding: 8rem 0; } }
+  @media (min-width: 992px) {
+    .section-space-vertical {
+      padding: 10rem 0; } }
 
 .u-section-heading-margin-bottom {
   margin-bottom: 4rem; }
@@ -6708,14 +6714,31 @@ body {
 .getInTouch {
   height: 100%;
   background-color: #fff;
-  box-shadow: 0 3px 6px rgba(0, 0, 0, 0.16);
-  padding: 4rem; }
+  box-shadow: 0 3px 6px rgba(0, 0, 0, 0.16); }
+  .getInTouch__body {
+    padding: 4rem; }
+  .getInTouch__footer {
+    padding-right: 4rem;
+    padding-bottom: 2rem;
+    text-align: right;
+    position: relative; }
   .getInTouch__address, .getInTouch__phone, .getInTouch__email {
     color: #5e6872;
     margin-bottom: 2rem; }
   .getInTouch i {
     color: #0f75bc;
     margin-right: 1rem; }
+
+.fancy__logo {
+  width: 20%; }
+
+.fancy__line::before {
+  content: "";
+  width: 72%;
+  position: absolute;
+  left: 0;
+  top: 40%;
+  border-bottom: 5px solid #0f75bc; }
 
 #howItWorks {
   background-image: url("../img/howItWorks-bg.png");
@@ -6907,7 +6930,8 @@ body {
   align-items: center;
   margin-bottom: 1rem; }
   .footer__social i {
-    margin-left: 1rem; }
+    margin-left: 1rem;
+    font-size: 2rem; }
 
 #services {
   background-color: #f3f3f3; }
