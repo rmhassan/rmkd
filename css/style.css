@@ -6601,6 +6601,22 @@ a.text-dark:hover, a.text-dark:focus {
     color: inherit;
     border-color: #dee2e6; } }
 
+@font-face {
+  font-family: "ProximaNova-Bold";
+  src: url("../fonts/ProximaNova-Bold.ttf"); }
+
+@font-face {
+  font-family: "ProximaNova-Light";
+  src: url("../fonts/ProximaNova-Light.ttf"); }
+
+@font-face {
+  font-family: "ProximaNova-Regular";
+  src: url("../fonts/ProximaNova-Regular.ttf"); }
+
+@font-face {
+  font-family: "ProximaNova-Semibold";
+  src: url("../fonts/ProximaNova-Semibold.ttf"); }
+
 *,
 *::after,
 *::before {
@@ -6620,6 +6636,7 @@ html {
 body {
   box-sizing: border-box;
   color: white;
+  font-family: "ProximaNova-Regular";
   font-size: 1.6rem;
   line-height: 1.2;
   width: 100%; }
@@ -6629,12 +6646,14 @@ body {
     height: 650px; } }
 
 .hero-heading {
+  font-family: "ProximaNova-Bold";
   font-size: 3.6rem;
   font-weight: 600;
   text-transform: uppercase;
   color: white; }
 
 .heading {
+  font-family: "ProximaNova-Bold";
   font-size: 3.6rem;
   font-weight: 600;
   color: #5e6872;
@@ -6644,9 +6663,9 @@ body {
   color: white; }
 
 .lead {
+  font-family: "ProximaNova-Bold";
   font-size: 2.4rem;
   font-weight: 600;
-  text-transform: uppercase;
   line-height: 1.2; }
 
 .lead--gray {
