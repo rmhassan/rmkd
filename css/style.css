@@ -6974,7 +6974,8 @@ body {
   padding: 1rem;
   display: flex;
   flex-direction: column;
-  align-items: center; }
+  align-items: center;
+  height: 100%; }
   .clientsCard__img {
     width: 10rem; }
 
