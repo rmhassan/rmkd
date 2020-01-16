@@ -6624,6 +6624,10 @@ a.text-dark:hover, a.text-dark:focus {
   padding: 0;
   box-sizing: inherit; }
 
+p,
+ul {
+  margin-bottom: 0; }
+
 html {
   font-size: 50%; }
   @media (min-width: 768px) {
@@ -6670,6 +6674,9 @@ body {
 
 .lead--gray {
   color: #5e6872; }
+
+.lead--18 {
+  font-size: 1.8rem; }
 
 .lead--blue {
   color: #0f75bc; }
@@ -6729,6 +6736,9 @@ body {
     color: #0f75bc;
     text-decoration: none; }
 
+.formMain__name, .formMain__email {
+  height: 55px; }
+
 .formMain__name, .formMain__email, .formMain__dropdown, .formMain__description {
   box-shadow: 0 3px 6px rgba(0, 0, 0, 0.16);
   border: none;
@@ -6750,7 +6760,7 @@ body {
   .getInTouch__footer {
     margin-top: auto;
     padding-right: 4rem;
-    padding-bottom: 2rem;
+    padding-bottom: 4rem;
     text-align: right;
     position: relative; }
   .getInTouch__address, .getInTouch__phone, .getInTouch__email {
@@ -6762,18 +6772,21 @@ body {
 
 .fancy__logo {
   width: 20%; }
+  @media (min-width: 992px) {
+    .fancy__logo {
+      margin-right: 4rem; } }
 
 .fancy__line::before {
   content: "";
   width: 70%;
   position: absolute;
   left: 0;
-  top: 35%;
+  top: 28%;
   border-bottom: 5px solid #0f75bc; }
   @media (min-width: 576px) {
     .fancy__line::before {
-      top: 40%;
-      width: 72%; } }
+      top: 34%;
+      width: 65%; } }
 
 #howItWorks {
   position: relative;
@@ -6879,16 +6892,18 @@ body {
 .testimonialCard {
   box-shadow: 0 3px 6px rgba(0, 0, 0, 0.16);
   height: 99%; }
+  .testimonialCard__userName {
+    margin-bottom: 0; }
   .testimonialCard__header {
     display: flex;
     align-items: center;
-    padding: 1.5rem;
+    padding: 2rem;
     height: 30%; }
     @media (min-width: 992px) {
       .testimonialCard__header {
         height: 35%; } }
   .testimonialCard__body {
-    padding: 1.5rem; }
+    padding: 2rem; }
   .testimonialCard__text {
     color: #5e6872; }
 
@@ -6941,9 +6956,9 @@ body {
   background-color: #fff;
   height: 100%; }
   .caseStudyCard__downloadImg {
-    height: 40%; }
+    height: 200px; }
   .caseStudyCard__body {
-    padding: 1.5rem;
+    padding: 2rem;
     color: #5e6872; }
   .caseStudyCard__header {
     display: flex;
@@ -6963,7 +6978,7 @@ body {
 .clientsCard {
   background-color: #fff;
   box-shadow: 0 3px 6px rgba(0, 0, 0, 0.16);
-  padding: 1rem;
+  padding: 2rem;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -6973,6 +6988,9 @@ body {
 
 #consultation {
   background-color: #0f75bc; }
+
+#consultation > .container > .row {
+  align-items: center; }
 
 #ourCustomers {
   background-color: #f3f3f3; }
@@ -7046,7 +7064,7 @@ body {
 
 .card__title {
   padding: 2rem;
-  height: 40%;
+  height: 100px;
   display: flex;
   align-items: center; }
 
@@ -7065,7 +7083,8 @@ body {
 .card__text {
   text-align: left;
   color: #5e6872;
-  font-size: 1.6rem; }
+  font-size: 1.6rem;
+  margin-bottom: 1rem; }
 
 #footer {
   background-color: #5e6872; }
@@ -7089,7 +7108,7 @@ body {
 .servicesCard {
   background-color: #fff;
   box-shadow: 0 3px 6px rgba(0, 0, 0, 0.16);
-  padding: 1.5rem;
+  padding: 2rem;
   border-radius: 5px;
   height: 100%; }
   .servicesCard__icon {
