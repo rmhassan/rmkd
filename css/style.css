@@ -6709,6 +6709,9 @@ body {
 .u-right-bleed {
   margin-right: calc(-100vw / 2 + 960px / 2); }
 
+.bg-gray {
+  background-color: #f3f3f3 !important; }
+
 .btn {
   font-size: 2.4rem;
   font-weight: 600;
@@ -6984,7 +6987,8 @@ body {
   align-items: center;
   height: 100%; }
   .clientsCard__img {
-    width: 10rem; }
+    width: 10rem;
+    margin-bottom: 1.5rem; }
 
 #consultation {
   background-color: #0f75bc; }
@@ -7047,6 +7051,10 @@ body {
   .of {
     width: 100%;
     height: 425px; } }
+
+#our-strength {
+  position: relative;
+  background-color: #f3f3f3; }
 
 #help {
   background-color: #f3f3f3; }
