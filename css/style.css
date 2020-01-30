@@ -6617,6 +6617,14 @@ a.text-dark:hover, a.text-dark:focus {
   font-family: "ProximaNova-Semibold";
   src: url("../fonts/ProximaNova-Semibold.ttf"); }
 
+@font-face {
+  font-family: "ProximaNova-Semibold";
+  src: url("../fonts/ProximaNova-Semibold.ttf"); }
+
+@font-face {
+  font-family: "ProximaNova-Extrabld";
+  src: url("../fonts/ProximaNova-Extrabld.ttf"); }
+
 *,
 *::after,
 *::before {
@@ -6694,6 +6702,12 @@ body {
 .text-gray-regular--eighteen {
   font-size: 1.8rem; }
 
+.font-size-sm {
+  font-size: 1.4rem; }
+  @media (min-width: 768px) {
+    .font-size-sm {
+      font-size: 1.6rem; } }
+
 .section-space-vertical {
   padding: 4rem 0; }
   @media (min-width: 768px) {
@@ -6715,34 +6729,48 @@ body {
 .btn {
   font-size: 2.4rem;
   font-weight: 600;
-  color: white;
   text-transform: uppercase; }
 
 .btn-primary {
   display: inline-block;
   padding: 1rem 2rem;
-  border: 4px solid white; }
+  color: white;
+  border: 4px solid white;
+  transition: all ease-in-out 0.2s; }
 
 .btn:hover {
   cursor: pointer; }
 
 .btn-primary:hover {
-  color: white;
-  text-decoration: none; }
+  color: #0f75bc;
+  border: 4px solid white;
+  background-color: white;
+  text-decoration: none;
+  font-weight: 700; }
 
 .btn-primary--blue {
   display: inline-block;
   padding: 1rem 2rem;
   border: 4px solid #0f75bc;
-  color: #0f75bc; }
+  color: #0f75bc;
+  transition: all ease-in-out 0.2s; }
   .btn-primary--blue:hover {
-    color: #0f75bc;
-    text-decoration: none; }
+    background-color: #0f75bc;
+    color: white;
+    text-decoration: none;
+    font-weight: 700; }
+
+.btn-100 {
+  width: 100%;
+  text-align: center; }
+  @media (min-width: 768px) {
+    .btn-100 {
+      width: auto; } }
 
 .formMain__name, .formMain__email {
   height: 55px; }
 
-.formMain__name, .formMain__email, .formMain__dropdown, .formMain__description {
+.formMain__name, .formMain__email, .formMain__description {
   box-shadow: 0 3px 6px rgba(0, 0, 0, 0.16);
   border: none;
   padding: 2rem 1rem;
@@ -6750,7 +6778,12 @@ body {
   font-size: 1.6rem; }
 
 .formMain__dropdown {
-  cursor: pointer; }
+  height: 55px !important;
+  cursor: pointer;
+  box-shadow: 0 3px 6px rgba(0, 0, 0, 0.16);
+  border: none;
+  color: black;
+  font-size: 1.6rem; }
 
 .getInTouch {
   display: flex;
@@ -6790,12 +6823,6 @@ body {
     .fancy__line::before {
       top: 34%;
       width: 65%; } }
-
-#howItWorks {
-  position: relative;
-  background-image: url("../img/howWorksDummy.png");
-  background-position: 100% 100%;
-  background-size: cover; }
 
 .listComponent {
   list-style: none;
@@ -6877,11 +6904,8 @@ body {
   margin-right: 1rem;
   text-align: center; }
 
-.navbar-nav .nav-item .nav-link:hover {
-  border: 4px solid white; }
-
-.navbar-toggler {
-  border-color: white; }
+.navbar-toggler:focus {
+  outline: none; }
 
 .navbar-logo {
   width: 50px; }
@@ -6890,7 +6914,10 @@ body {
       width: auto; } }
 
 .navbar-dark .nav-item .nav-link.active {
-  border: 4px solid white; }
+  font-weight: 600; }
+  @media (min-width: 992px) {
+    .navbar-dark .nav-item .nav-link.active {
+      border: 4px solid white; } }
 
 .testimonialCard {
   box-shadow: 0 3px 6px rgba(0, 0, 0, 0.16);
@@ -7016,7 +7043,7 @@ body {
   width: 20rem; }
 
 #header--home {
-  background-image: linear-gradient(to right bottom, rgba(15, 117, 188, 0.801), rgba(15, 117, 188, 0.801)), url("../img/hero-small.svg");
+  background-image: url("../img/Header-BG.png");
   background-size: cover;
   background-position: center;
   padding: 1rem 0; }
@@ -7033,6 +7060,12 @@ body {
   font-weight: 400;
   letter-spacing: 0.5px;
   line-height: 1.2; }
+
+#howItWorks {
+  position: relative;
+  background-image: url("../img/Working-BG.png");
+  background-position: 100% 100%;
+  background-size: cover; }
 
 @media (min-width: 576px) {
   .abs-right {
@@ -7119,5 +7152,14 @@ body {
   padding: 2rem;
   border-radius: 5px;
   height: 100%; }
+  .servicesCard--goals {
+    display: flex;
+    align-items: center;
+    height: 180px; }
+    @media (min-width: 768px) {
+      .servicesCard--goals {
+        height: 100%; } }
+    .servicesCard--goals img {
+      margin-right: 2rem; }
   .servicesCard__icon {
     margin-bottom: 1rem; }
